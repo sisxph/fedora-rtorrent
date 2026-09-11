@@ -30,9 +30,6 @@ RUN mkdir -p /home/rtorrent/rtorrent/config.d/ && \
 COPY --chown=rtorrent:rtorrent config.d/ /home/rtorrent/rtorrent/config.d/
 COPY --chown=rtorrent:rtorrent .rtorrent.rc /home/rtorrent/
 
-VOLUME /home/rtorrent/rtorrent/download
-VOLUME /home/rtorrent/rtorrent/.session
-VOLUME /home/rtorrent/rtorrent/watch
 
 WORKDIR /home/rtorrent/
 
